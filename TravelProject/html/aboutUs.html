@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<style>
+   *{
+        margin: 0;
+        padding: 0;
+        /* font-family: 'Poppins', sans-serif; */
+    }
+    body::before{
+        background: url('../images/aboutus/blonde-1867768_1280.jpg')no-repeat center center/cover;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        /* opacity: 0.89; */
+        /* opacity: 0.7; */
+        height: 100%;
+        width: 100%;
+    }
+    #navbar::before{
+        background-color: white;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        /* opacity: 0.4; */
+        height: 102.5px;
+        width: 100%;
+    }
+    #navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #navbar .logo img{
+        height: 100px;
+        width: 100px;
+    }
+    #navbar .left{
+        margin: 30px;
+    }
+    #navbar .left .hthree{
+        font-size: 1.6rem;
+    }
+    .ulmid{
+        display: flex;
+        margin: 30px;
+    }
+    .ulmid .item{
+        list-style: none;
+    }
+    .ulmid .item a{
+        text-decoration: none;
+        padding: 10px;
+        font-size: 1.4rem;
+        color:black;
+        margin: 20px;
+    }
+   .mid .ulmid a:hover{
+        border-bottom: 4px solid #000;
+	/* transition: 0.4s; */
+    }
+    #navbar .right{
+        margin: 30px;
+        font-size: 1.2rem;
+    }
+    #navbar .right .login{
+        padding: 12px;
+        color:black;
+        text-decoration: none;
+        border: 3px solid red;
+        border-radius: 7px;
+        font-weight: bold;
+    }
+    #navbar .right .login:hover{
+        background-color: red;
+    }
+    #navbar .right .signup{
+        font-weight: bold;
+        padding: 12px;
+        color: black;
+        text-decoration: none;
+        border: 3px solid red;
+        margin: 10px;
+        border-radius: 7px;
+    }
+    #navbar .right .signup:hover{
+        background-color: red;
+    }
+
+
+
+    .submenu{
+        display: none;
+        position: absolute;
+        height: 100px;
+        width: 120px;
+    }
+    .submenu .places a{
+        color:black;
+        line-height: 30px;
+        font-size: 1.3rem;
+        padding: 2px;
+    }
+    .submenu .places a:hover{
+        color: darkred;
+        background-color: lightcoral;
+        padding: 2px;
+    }
+    .submenu li{
+        list-style: none;
+    }
+    .dropdown:hover .submenu{
+        display: block;
+    }
+    .mid .ulmid #des a:hover{
+        border-bottom: none;
+    }
+
+
+
+    #main .p1{
+        font-weight: bold;
+        font-size: 60px;
+        margin-left: 350px;
+        margin-top: 40px;
+    }
+    .boxtext{
+        /* border:2px solid red; */
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        width: 600px;
+        margin-left: 150px;
+        margin-top: 20px;
+        /* background-color: black; */
+        background-color: peachpuff;
+        /* opacity: 0.3; */
+        /* z-index: -1; */
+        padding: 15px;
+    }
+    .textt .text1{
+        text-align: center;
+        color: black;
+        font-size: 25px;
+         display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about{
+        text-align: center;
+    }
+</style>
+<body>
+     <nav id="navbar">
+        <div class="logo">
+            <img src="../images/airplane (1).png" alt="">
+        </div>
+        <div class="left">
+            <h3 class="hthree">Trekking Trails</h3>
+        </div>
+
+        <div class="mid">
+            <ul class="ulmid">
+                <li class="item"><a href="../html/index.html">Home</a></li>
+                <li class="item"><a href="../html/aboutUs.html">About Us</a></li>
+                <li class="item"><a href="../html/package2.html">Package</a></li>
+                <li class="item">
+                    <li class="item dropdown" id="des"><a href="#">Destinations</a>
+                        <ul class="submenu">
+                            <li class="places"><a href="../html/demoNewYork.html">NewYork</a></li>
+                            <li class="places"><a href="../html/demoThailand.html">Thailand</a></li>
+                            <li class="places"><a href="../html/demoAustralia.html">Australia</a></li>
+                        </ul>
+                    </li>
+                <li class="item"><a href="../html/contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <a href="../html/login.html" class="login">Login</a>
+            <a href="../html/signup.html" class="signup">Sign Up</a>
+        </div>
+    </nav>
+
+    <section id="main">
+
+        <p class="p1">
+            About Us
+        </p>
+
+        <div class="boxtext">
+        <div class="textt">
+            <p class="text1">
+
+
+<h3 class="about">                About Trekking Trails </h3><br>
+Welcome to Trekking Trails, your ultimate destination for discovering breathtaking hiking and trekking adventures around the world. Our mission is to inspire and empower outdoor enthusiasts to explore the beauty of nature, challenge themselves, and create unforgettable memories through trekking.<br>
+
+<h3 class="about">Our Story</h3><br>
+Trekking Trails was born out of a passion for nature and adventure. We believe that every step taken on a trail is an opportunity to connect with the natural world, experience diverse landscapes, and embrace the thrill of the unknown. Our team of experienced trekkers and explorers is dedicated to curating a collection of the most stunning and rewarding trails, ensuring that your journey is safe, enjoyable, and unforgettable.
+            </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+         *{
+        margin: 0;
+        padding: 0;
+        /* font-family: 'Poppins', sans-serif; */
+    }
+    body::before{
+        background: url('../images/aboutus/couple-2568954_1280.jpg')no-repeat center center/cover;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        /* opacity: 0.89; */
+        /* opacity: 0.7; */
+        height: 100%;
+        width: 100%;
+    }
+    #navbar::before{
+        background-color: white;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        /* opacity: 0.4; */
+        height: 102.5px;
+        width: 100%;
+    }
+    #navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #navbar .logo img{
+        height: 100px;
+        width: 100px;
+    }
+    #navbar .left{
+        margin: 30px;
+    }
+    #navbar .left .hthree{
+        font-size: 1.6rem;
+    }
+    .ulmid{
+        display: flex;
+        margin: 30px;
+    }
+    .ulmid .item{
+        list-style: none;
+    }
+    .ulmid .item a{
+        text-decoration: none;
+        padding: 10px;
+        font-size: 1.4rem;
+        color:black;
+        margin: 20px;
+    }
+   .mid .ulmid a:hover{
+        border-bottom: 4px solid #000;
+	/* transition: 0.4s; */
+    }
+    #navbar .right{
+        margin: 30px;
+        font-size: 1.2rem;
+    }
+    #navbar .right .login{
+        padding: 12px;
+        color:black;
+        text-decoration: none;
+        border: 3px solid red;
+        border-radius: 7px;
+        font-weight: bold;
+    }
+    #navbar .right .login:hover{
+        background-color: red;
+    }
+    #navbar .right .signup{
+        font-weight: bold;
+        padding: 12px;
+        color: black;
+        text-decoration: none;
+        border: 3px solid red;
+        margin: 10px;
+        border-radius: 7px;
+    }
+    #navbar .right .signup:hover{
+        background-color: red;
+    }
+
+
+
+    .submenu{
+        display: none;
+        position: absolute;
+        height: 100px;
+        width: 120px;
+    }
+    .submenu .places a{
+        color:black;
+        line-height: 30px;
+        font-size: 1.3rem;
+        padding: 2px;
+        
+    }
+    .submenu .places a:hover{
+        color: darkred;
+        background-color: lightcoral;
+        padding: 2px;
+        }
+    .submenu li{
+        list-style: none;
+    }
+    .dropdown:hover .submenu{
+        display: block;
+    }
+    .mid .ulmid #des a:hover{
+        border-bottom: none;
+    }
+
+    .formg{
+        /* border:2px solid black; */
+        height:400px;
+        width: 500px;
+        margin: auto;
+        margin-top: 70px;
+        border-radius: 12px;
+        /* background:rgba(0,0,0,0.3); */
+    }
+
+    .formg .log{
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        width: 70px;
+        margin-left: 210px;
+    }
+
+    .formg input{
+        /* background-color: transparent; */
+        margin-bottom: 10px;
+        padding: 8px;
+        border-radius: 5px;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.5); */
+    }
+    .nam{
+        margin-left: 40px;
+        /* margin-top: 30px; */
+    }
+    .nam input{
+        font-size: 1rem;
+        width: 400px;
+    }
+
+    textarea{
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    textarea{
+        font-size: 1rem;
+        width: 420px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+    .mail{
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    .mail input{
+        font-size: 1rem;
+        width: 400px;
+    }
+    .passw{
+        margin-left: 40px;
+    }
+    .passw input{
+        font-size: 1rem;
+        width: 400px;
+    }
+    .check{
+        margin-left: 190px;
+    }
+    .check .sp{
+        font-size: 15px ;
+        color:white;
+    }
+    .buton{
+        margin-left: 180px;
+    }
+    .buton button{
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 7px;
+        width: 160px;
+        margin-top: 20px;
+    }
+    .buton button:hover{
+        background-color: black;
+        color: red;
+    }
+
+    .acp .acc{
+        font-size: 15px;
+    }
+    .acp{
+        margin-left:170px;
+        margin-top: 8px;
+    }
+   
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="../images/airplane (1).png" alt="">
+        </div>
+        <div class="left">
+            <h3 class="hthree">Trekking Trails</h3>
+        </div>
+
+        <div class="mid">
+            <ul class="ulmid">
+                <li class="item"><a href="../html/index.html">Home</a></li>
+                <li class="item"><a href="../html/aboutUs.html">About Us</a></li>
+                <li class="item"><a href="../html/package2.html">Package</a></li>
+                <li class="item">
+                    <li class="item dropdown" id="des"><a href="#">Destinations</a>
+                        <ul class="submenu">
+                            <li class="places"><a href="../html/demoNewYork.html">NewYork</a></li>
+                            <li class="places"><a href="../html/demoThailand.html">Thailand</a></li>
+                            <li class="places"><a href="../html/demoAustralia.html">Australia</a></li>
+                        </ul>
+                    </li>
+                <li class="item" style="margin: auto;"><a href="../html/contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <a href="../html/login.html" class="login">Login</a>
+            <a href="../html/signup.html" class="signup">Sign Up</a>
+        </div>
+    </nav>
+
+
+    
+    <section id="main">
+        <form action="noaction.php" class="formg">
+            <p class="log">
+                ContactUs
+            </p>
+
+            <div class="nam">
+                <input type="text" name="nam" id="nam" placeholder="Name" required>
+                </div>
+            <div class="mail">
+            <input type="text" name="email" id="email" placeholder="Email Id" required>
+            </div>
+            <div class="mssgg">
+            <textarea name="mssg" id="mssg" cols="30" rows="10" placeholder="Your Message"></textarea>
+            </div>
+            <div class="buton">
+            <button class="btnn">Contact Us</button>
+            </div>
+        </form>
+
+
+        <!-- <div class="contactt">
+            <p class="con">
+                Contact
+            </p>
+        </div> -->
+    </section>
+
+</body>
+</html>

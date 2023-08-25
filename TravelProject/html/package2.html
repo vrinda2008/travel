@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages</title>
+    <style>
+         *{
+        margin: 0;
+        padding: 0;
+        /* font-family: 'Poppins', sans-serif; */
+    }
+    #navbar::before{
+        background-color: white;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        opacity: 0.4;
+        height: 81.5px;
+        width: 100%;
+    }
+    #navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #navbar .logo img{
+        height: 100px;
+        width: 100px;
+    }
+    #navbar .left{
+        margin: 30px;
+    }
+    #navbar .left .hthree{
+        font-size: 1.6rem;
+    }
+    .ulmid{
+        display: flex;
+        margin: 30px;
+    }
+    .ulmid .item{
+        list-style: none;
+    }
+    .ulmid .item a{
+        text-decoration: none;
+        padding: 10px;
+        font-size: 1.4rem;
+        color:black;
+        margin: 20px;
+    }
+   .mid .ulmid a:hover{
+        border-bottom: 4px solid #000;
+	/* transition: 0.4s; */
+    }
+    #navbar .right{
+        margin: 30px;
+        font-size: 1.2rem;
+    }
+    #navbar .right .login{
+        padding: 12px;
+        color:black;
+        text-decoration: none;
+        border: 3px solid red;
+        border-radius: 7px;
+        font-weight: bold;
+    }
+    #navbar .right .login:hover{
+        background-color: red;
+    }
+    #navbar .right .signup{
+        font-weight: bold;
+        padding: 12px;
+        color: black;
+        text-decoration: none;
+        border: 3px solid red;
+        margin: 10px;
+        border-radius: 7px;
+    }
+    #navbar .right .signup:hover{
+        background-color: red;
+    }
+
+    
+    .submenu{
+        display: none;
+        position: absolute;
+        height: 100px;
+        width: 120px;
+    }
+    .submenu .places a{
+        color:black;
+        line-height: 30px;
+        font-size: 1.3rem;
+        padding: 2px;
+        
+    }
+    .submenu .places a:hover{
+        color: darkred;
+        background-color: lightcoral;
+        padding: 2px;
+    }
+    .submenu li{
+        list-style: none;
+    }
+    .dropdown:hover .submenu{
+        display: block;
+    }
+    .mid .ulmid #des a:hover{
+        border-bottom: none;
+    }
+
+
+    #main::before{
+       background: url('../images/package/pexels-tirachard-kumtanom-450062.jpg');
+        /* background-image: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),url('../images/img1.jpg'); */
+	background-position: center;
+	background-size: cover;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        /* opacity: 0.78; */
+        /* height: 85.3%; */
+        height: 176%;
+        width: 100%;
+    }
+    #main .top{
+        text-align: center;  
+        padding:10px;
+        color: white;
+        margin: 10px;
+    }
+    #main .box{
+        border: 2px solid black;
+        background-color: white;
+        width: 300px;
+        height: 300px;
+        /* margin: 10px; */
+        /* margin: auto; */
+        margin-top: 10px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .week {
+        display: flex;
+    }
+    .week .box{
+        margin: auto;
+    }
+    .box img{
+        height: 200px;
+        width: 300px;
+    }
+    </style>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="logo">
+            <img src="../images/airplane (1).png" alt="">
+        </div>
+        <div class="left">
+            <h3 class="hthree">Trekking Trails</h3>
+        </div>
+
+        <div class="mid">
+            <ul class="ulmid">
+                <li class="item"><a href="../html/index.html">Home</a></li>
+                <li class="item"><a href="../html/aboutUs.html">About Us</a></li>
+                <li class="item"><a href="../html/package2.html">Package</a></li>
+                <li class="item">
+                    <li class="item dropdown" id="des"><a href="#">Destinations</a>
+                        <ul class="submenu">
+                            <li class="places"><a href="../html/demoNewYork.html">NewYork</a></li>
+                            <li class="places"><a href="../html/demoThailand.html">Thailand</a></li>
+                            <li class="places"><a href="../html/demoAustralia.html">Australia</a></li>
+                        </ul>
+                    </li>
+                <li class="item"><a href="../html/contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <a href="../html/login.html" class="login">Login</a>
+            <a href="../html/signup.html" class="signup">Sign Up</a>
+        </div>
+    </nav>
+
+    <section id="main">
+        <div class="top">
+            <h2 class="ourpackages">Weekend Speacial Trips</h2>
+        </div>
+        <div class="week">
+        <div class="box">
+            <img src="../images/package/2.jpg" alt="none" class="frst">
+            <br>
+            <div class="country">
+            <p class="txt">
+                Brazil
+            </p>
+            </div>
+        </div>
+        <!-- <div class="box">
+            hjxsha sdjbsnfbsj js
+        </div> -->
+        <div class="box">
+            <img src="../images/package/image_large.jpeg" alt="none" class="frst">
+            <br>
+            <div class="country">
+            <p class="txt">
+                Denmark
+            </p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../images/package/egypt-pyramids.avif" alt="none" class="frst">
+            <br>
+            <div class="country">
+            <p class="txt">
+                Egypt
+            </p>
+            </div>
+        </div>
+        </div>
+
+        <div class="top">
+            <h2 class="ourpackages">Honeymoon Speacial Trips</h2>
+        </div>
+        <div class="week">
+            <!-- <div class="box">
+                <img src="../images/package/2.jpg" alt="none" class="frst">
+                <br>
+                <div class="country">
+                <p class="txt">
+                    Brazil
+                </p>
+                </div>
+            </div> -->
+        <div class="box">
+            <img src="../images/package/1474116741_destination_for_malaysian_24343.jpg" alt="none" class="frst">
+            <br>
+            <div class="country">
+            <p class="txt">
+                Malasiya
+            </p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../images/package/1675261154_shutterstock_2148766633.avif" alt="none" class="frst">
+            <br>
+            <div class="country">
+            <p class="txt">
+                Maldives
+            </p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../images/package/shutterstock_667548661v2.jpg" alt="none" class="frst">
+            <br>
+            <div class="country">
+            <p class="txt">
+                France
+            </p>
+            </div>
+        </div>
+        </div>
+        <div class="top">
+            <h2 class="ourpackages">Weekend Speacial Trips</h2>
+        </div>
+
+
+        <div class="week">
+            <div class="box">
+                <img src="../images/package/Rome-Tile.jpg" alt="none" class="frst">
+                <br>
+                <div class="country">
+                <p class="txt">
+                    Italy
+                </p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../images/package/japanfirsttime1.jpeg" alt="none" class="frst">
+                <br>
+                <div class="country">
+                <p class="txt">
+                    Japan
+                </p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../images/package/Nigeria-Lagos-Victoria-Island-Urbanization.jpg" alt="none" class="frst">
+                <br>
+                <div class="country">
+                <p class="txt">
+                    Nigeria
+                </p>
+                </div>
+            </div>
+        </div>
+            
+    </section>
+    
+</body>
+</html>

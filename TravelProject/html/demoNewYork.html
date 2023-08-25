@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Page New York City</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        /* font-family: 'Poppins', sans-serif; */
+    }
+    body::before{
+        background: url('../images/pexels-emre-can-acer-2079228.jpg')no-repeat center center/cover;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        /* opacity: 0.89; */
+        height: 131.5%;
+        width: 100%;
+    }
+    #navbar::before{
+        background-color: white;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        opacity: 0.4;
+        height: 15%;
+        /* height: 100%; */
+        width: 100%;
+    }
+    #navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* position: sticky; */
+        height: 15%;
+        /* top:1px; */
+    }
+    #navbar .logo img{
+        height: 100px;
+        width: 100px;
+    }
+    #navbar .left{
+        margin: 30px;
+    }
+    #navbar .left .hthree{
+        font-size: 1.6rem;
+    }
+    .ulmid{
+        display: flex;
+        margin: 30px;
+    }
+    .ulmid .item{
+        list-style: none;
+    }
+    .ulmid .item a{
+        text-decoration: none;
+        padding: 10px;
+        font-size: 1.4rem;
+        color:black;
+        margin: 20px;
+    }
+   .mid .ulmid a:hover{
+        border-bottom: 4px solid #000;
+	/* transition: 0.4s; */
+    }
+    #navbar .right{
+        margin: 30px;
+        font-size: 1.2rem;
+    }
+    #navbar .right .login{
+        padding: 12px;
+        color:black;
+        text-decoration: none;
+        border: 3px solid red;
+        border-radius: 7px;
+        font-weight: bold;
+    }
+    #navbar .right .login:hover{
+        background-color: red;
+    }
+    #navbar .right .signup{
+        font-weight: bold;
+        padding: 12px;
+        color: black;
+        text-decoration: none;
+        border: 3px solid red;
+        margin: 10px;
+        border-radius: 7px;
+    }
+    #navbar .right .signup:hover{
+        background-color: red;
+    }
+
+
+
+    #main .frst{
+        display: flex;
+        margin: 100px;
+    }
+    #main .vid2{
+        margin-left: 290px;
+    }
+    .frst p{
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+    }
+    #main .heading{
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    #trips{
+        margin-left: -28px;
+        border: 3px solid black;
+    }
+    #trips:hover{
+        background-color: lightgray;
+    }
+    .submenu{
+        display: none;
+        position: absolute;
+        height: 100px;
+        width: 120px;
+
+    }
+    .submenu .places a{
+        color:white;
+        line-height: 30px;
+        font-size: 1.3rem;
+        padding: 2px;
+        
+    }
+    .submenu .places a:hover{
+        color: darkred;
+        background-color: lightcoral;
+        padding: 2px;
+    }
+    .submenu li{
+        list-style: none;
+    }
+    .dropdown:hover .submenu{
+        display: block;
+    }
+    .mid .ulmid #des a:hover{
+        border-bottom: none;
+    }
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="../images/airplane (1).png" alt="">
+        </div>
+        <div class="left">
+            <h3 class="hthree">Trekking Trails</h3>
+        </div>
+
+        <div class="mid">
+            <ul class="ulmid">
+                <li class="item"><a href="../html/index.html">Home</a></li>
+                <li class="item"><a href="../html/aboutUs.html">About Us</a></li>
+                <li class="item"><a href="../html/package2.html">Package</a></li>
+                <li class="item">
+                    <li class="item dropdown" id="des"><a href="#">Destinations</a>
+                        <ul class="submenu">
+                            <li class="places"><a href="../html/demoNewYork.html">NewYork</a></li>
+                            <li class="places"><a href="../html/demoThailand.html">Thailand</a></li>
+                            <li class="places"><a href="../html/demoAustralia.html">Australia</a></li>
+                        </ul>
+                    </li>
+                <li class="item"><a href="../html/contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <a href="../html/login.html" class="login">Login</a>
+            <a href="../html/signup.html" class="signup">Sign Up</a>
+        </div>
+    </nav>
+
+
+    <section id="main">
+        <p class="heading">NEW YORK TALES!</p>
+        <div class="frst">
+        <div class="vid1">
+            <iframe width="400" height="215" src="https://www.youtube.com/embed/hVTXu8SgVyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>Newyork Times Square</p>
+        </div>
+
+        <div class="vid2">
+            <iframe width="400" height="215" src="https://www.youtube.com/embed/KpdwWvlDItU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>Newyork Empire State Building</p>
+        </div>
+        </div>
+        <div class="frst">
+        <div class="vid1">
+            <iframe width="400" height="215" src="https://www.youtube.com/embed/GQRRtaI6DR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>Newyork Rockefeller Center</p>
+        </div>
+
+        <div class="vid2">
+            <iframe width="400" height="215" src="https://www.youtube.com/embed/YIUt7mfQSNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>Newyork BrookLyn Bridge</p>
+        </div>
+        </div>
+
+    </section>
+
+</body>
+</html>

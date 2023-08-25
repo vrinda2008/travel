@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trekking Trails</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        /* font-family: 'Poppins', sans-serif; */
+    }
+    #navbar::before{
+        background-color: white;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        opacity: 0.4;
+        height: 81.5px;
+        width: 100%;
+    }
+    #navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #navbar .logo img{
+        height: 100px;
+        width: 100px;
+    }
+    #navbar .left{
+        margin: 30px;
+    }
+    #navbar .left .hthree{
+        font-size: 1.6rem;
+    }
+    .ulmid{
+        display: flex;
+        margin: 30px;
+    }
+    .ulmid .item{
+        list-style: none;
+    }
+    .ulmid .item a{
+        text-decoration: none;
+        padding: 10px;
+        font-size: 1.4rem;
+        color:black;
+        margin: 20px;
+    }
+   .mid .ulmid a:hover{
+        border-bottom: 4px solid #000;
+	/* transition: 0.4s; */
+    }
+    #navbar .right{
+        margin: 30px;
+        font-size: 1.2rem;
+    }
+    #navbar .right .login{
+        padding: 12px;
+        color:black;
+        text-decoration: none;
+        border: 3px solid red;
+        border-radius: 7px;
+        font-weight: bold;
+    }
+    #navbar .right .login:hover{
+        background-color: red;
+    }
+    #navbar .right .signup{
+        font-weight: bold;
+        padding: 12px;
+        color: black;
+        text-decoration: none;
+        border: 3px solid red;
+        margin: 10px;
+        border-radius: 7px;
+    }
+    #navbar .right .signup:hover{
+        background-color: red;
+    }
+
+
+
+
+
+    /* main */
+    #main::before{
+        background-image: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),url('../images/img1.jpg');
+	background-position: center;
+	background-size: cover;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        /* opacity: 0.4; */
+        height: 85.3%;
+        width: 100%;
+    }
+    #main .left2{
+        display: flex;
+        flex-direction: column;
+        float: left;
+        margin-top: 180px;
+        margin-left: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    #main .left2 .htwo{
+        color:white;
+        padding: 12px;
+        font-size: 2.2rem;
+    }
+    #main .left2 .text{
+        color:white;
+        text-align: center;
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+    #main .left2 .abtn{
+        background-color: white;
+        padding: 15px;
+        width: 150px;
+        height: 25px;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 10px;
+        display: inline-block;
+        font-weight: bold;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    #main .left2 .abtn:hover{
+        font-size:1.4rem ;
+        /* padding: 0; */
+        /* margin: 0; */
+    }
+
+    .right2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .right2 .box img{
+        height: 250px;
+        width: 250px;
+        border-radius: 5px;
+    }
+    .box{
+        margin-top: 118px;
+        margin-left: 28px;
+    }
+    .cntry p{
+        background-color: black;
+        border-radius: 2px;
+        color: red;
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+    }
+
+    .box a{
+        background-color: white;
+        color:red;
+        padding: 10px;
+        border-radius: 7px;
+        margin-left: 45px;
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
+    .box a:hover{
+        background-color: black;
+    }
+
+
+
+
+    #foot{
+        display: flex;
+        background-color: white;
+        margin-top: 122px;
+        height: 20px;
+    }
+    #foot p{
+        margin-left: 220px;
+        font-size: 14px;
+        color: darkgreen;
+    }
+    #foot p:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    #trips{
+        margin-left: -28px;
+        border: 3px solid black;
+    }
+    #trips:hover{
+        background-color: lightgray;
+    }
+
+    .submenu{
+        display: none;
+        position: absolute;
+        height: 100px;
+        width: 120px;
+    }
+    .submenu .places a{
+        color:black;
+        line-height: 30px;
+        font-size: 1.3rem;
+        padding: 2px;
+        
+    }
+    .submenu .places a:hover{
+        color: darkred;
+        background-color: lightcoral;
+        padding: 2px;
+    }
+    .submenu li{
+        list-style: none;
+    }
+    .dropdown:hover .submenu{
+        display: block;
+    }
+    .mid .ulmid #des a:hover{
+        border-bottom: none;
+    }
+
+    
+
+</style>
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="../images/airplane (1).png" alt="">
+        </div>
+        <div class="left">
+            <h3 class="hthree">Trekking Trails</h3>
+        </div>
+
+        <div class="mid">
+            <ul class="ulmid">
+                <li class="item"><a href="../html/index.html">Home</a></li>
+                <li class="item"><a href="../html/aboutUs.html">About Us</a></li>
+                <li class="item"><a href="../html/package2.html">Package</a></li>
+                <li class="item">
+                    <li class="item dropdown" id="des"><a href="#">Destinations</a>
+                        <ul class="submenu">
+                            <li class="places"><a href="../html/demoNewYork.html">NewYork</a></li>
+                            <li class="places"><a href="../html/demoThailand.html">Thailand</a></li>
+                            <li class="places"><a href="../html/demoAustralia.html">Australia</a></li>
+                        </ul>
+                    </li>
+                <li class="item"><a href="../html/contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <a href="../html/login.html" class="login">Login</a>
+            <a href="../html/signup.html" class="signup">Sign Up</a>
+        </div>
+    </nav>
+
+
+    <section id="main">
+        <div class="left2">
+            <div class="htwo">
+                <h2>Travel With Us!</h2>
+            </div>
+            <div class="text">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quod quas</p> <p>aliquam nobis tempora, laudantium amet ipsa! Doloremque.</p>
+            </div>
+            <div class="abtn">
+                Learn More
+            </div>
+        </div>
+
+
+        <div class="right2">
+            <div class="box">
+                <div class="cntry">
+                    <p>Australia</p>
+                </div>
+                <img src="../images/img1.jpg" alt="">
+                <br>
+                <br>
+                <a href="#">Book Now 15% OFF</a>
+            </div>
+
+            <div class="box">
+                <div class="cntry">
+                    <p>New York</p>
+                </div>
+                <img src="../images/img2.jpg" alt="">
+                <br>
+                <br>
+                <a href="#">Book Now 20% OFF</a>
+            </div>
+
+            <div class="box">
+                <div class="cntry">
+                   <p>Thailand</p>
+                </div>
+                <img src="../images/img3.jpg" alt="">
+                <br>
+                <br>
+                <a href="#">Book Now 25% OFF</a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="foot">
+        <p>Copyright</p>
+        <p>Terms and Conditions</p>
+        <p>Privacy Policy</p>
+        <p>Complaints</p>
+    </footer>
+</body>
+</html>

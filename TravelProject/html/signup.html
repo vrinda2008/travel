@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body::before{
+            background: url('../images/drink-84533_1280.jpg')no-repeat center center/cover;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        /* opacity: 0.89; */
+        height: 100%;
+        width: 100%;
+        }
+        #navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #navbar .logo img{
+        height: 100px;
+        width: 100px;
+    }
+    #navbar .left{
+        margin: 30px;
+    }
+    #navbar .left .hthree{
+        font-size: 1.6rem;
+    }
+    .ulmid{
+        display: flex;
+        margin: 30px;
+    }
+    .ulmid .item{
+        list-style: none;
+    }
+    .ulmid .item a{
+        text-decoration: none;
+        padding: 15px;
+        margin: 20px;
+        font-size: 1.4rem;
+        color:black;
+    }
+   .mid .ulmid a:hover{
+        border-bottom: 4px solid #000;
+    }
+
+
+
+    .formg{
+        border:2px solid black;
+        height:540px;
+        width: 500px;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 12px;
+        background:rgba(0,0,0,0.3);
+    }
+
+    .formg .sign{
+        font-size: 26px;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        margin-left: 20px;
+    }
+
+    .formg input{
+        background-color: transparent;
+        padding: 8px;
+        border-radius: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .frstn{
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    .frstn input{
+        font-size: 1rem;
+        width: 400px;
+    }
+    .lastn{
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    .lastn input{
+        font-size: 1rem;
+        width: 400px;
+    }
+    .mail{
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    .mail input{
+        font-size: 1rem;
+        margin-bottom: 30px;
+        width: 400px;
+    }
+    .passw{
+        margin-left: 40px;
+    }
+    .passw input{
+        margin-bottom: 30px;
+        font-size: 1rem;
+        width: 400px;
+    }
+    .check{
+        margin-bottom: 30px;
+        margin-left: 150px;
+    }
+    .check .sp{
+        font-size: 15px ;
+        color:white;
+    }
+    .buton{
+        margin-left: 180px;
+    }
+    .buton button{
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 7px;
+        width: 160px;
+    }
+    .buton button:hover{
+        background-color: black;
+        color: red;
+    }
+    .buton .acc{
+        font-size: 15px;
+    }
+    .acp{
+        margin: auto;
+        margin-top: 8px;
+    }
+    #trips{
+        margin-left: -28px;
+        border: 3px solid black;
+    }
+    #trips:hover{
+        background-color: lightgray;
+    }
+    .submenu{
+        display: none;
+        position: absolute;
+        /* min-width: 100%; */
+        height: 100px;
+        width: 120px;
+    }
+    .submenu .places a{
+        color:white;
+        line-height: 30px;
+        font-size: 1.3rem;
+        padding: 2px;
+        
+    }
+    .submenu .places a:hover{
+        color: darkred;
+        background-color: lightcoral;
+        padding: 2px;
+    }
+    .submenu li{
+        list-style: none;
+    }
+    .dropdown:hover .submenu{
+        display: block;
+    }
+    .mid .ulmid #des a:hover{
+        border-bottom: none;
+    }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="../images/airplane (1).png" alt="">
+        </div>
+        <div class="left">
+            <h3 class="hthree">Trekking Trails</h3>
+        </div>
+
+        <div class="mid">
+            <ul class="ulmid">
+                <li class="item"><a href="../html/index.html">Home</a></li>
+                <li class="item"><a href="../html/aboutUs.html">About Us</a></li>
+                <li class="item"><a href="../html/package2.html">Package</a></li>
+                <li class="item">
+                    <li class="item dropdown" id="des"><a href="#">Destinations</a>
+                        <ul class="submenu">
+                            <li class="places"><a href="../html/demoNewYork.html">NewYork</a></li>
+                            <li class="places"><a href="../html/demoThailand.html">Thailand</a></li>
+                            <li class="places"><a href="../html/demoAustralia.html">Australia</a></li>
+                        </ul>
+                    </li>
+                <li class="item"><a href="../html/contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="main">
+        <form action="noaction.php" class="formg">
+            <p class="sign">
+            Sign Up
+            </p>
+            <div class="frstn">
+                <input type="text" name="frstnm" id="frstnm" placeholder="First Name" required>
+            </div>
+            <div class="lastn">
+                <input type="text" name="lastnm" id="lastnm" placeholder="Last Name" required>
+            </div>
+            <div class="mail">
+            <input type="text" name="email" id="email" placeholder="Email Id" required>
+            </div>
+            <div class="passw">
+            <input type="password" name="pass" id="pass" placeholder="Enter Password" required>
+            </div>
+            <div class="passw">
+            <input type="password" name="pass" id="pass" placeholder="Confirm Password" required>
+            </div>
+            <div class="check">
+                <label for="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox"><span class="sp">I agree to the terms and Conditions</span>
+            </label>
+            </div>
+            <div class="buton">
+            <button class="btnn">Register</button>
+            <div class="acp">
+            <p class="acc">Already have an account? <a href="../html/login.html" class="p">Login in</a> </p>
+            </div>
+            </div>
+        </form>
+    </section>
+
+</body>
+</html>
